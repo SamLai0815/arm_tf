@@ -1,0 +1,2239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\contributing.md" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\license.md" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\Makefile" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\readme.md" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\.gitignore" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\acknowledgements.md" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl1\bl1.ld.S">
+      <Filter>bl1</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl1\bl1.mk">
+      <Filter>bl1</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl1\aarch32\bl1_entrypoint.S">
+      <Filter>bl1\aarch32</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl1\aarch32\bl1_exceptions.S">
+      <Filter>bl1\aarch32</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl1\aarch64\bl1_entrypoint.S">
+      <Filter>bl1\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl1\aarch64\bl1_exceptions.S">
+      <Filter>bl1\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl2\bl2.ld.S">
+      <Filter>bl2</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl2\bl2.mk">
+      <Filter>bl2</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl2\aarch32\bl2_entrypoint.S">
+      <Filter>bl2\aarch32</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl2\aarch64\bl2_entrypoint.S">
+      <Filter>bl2\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl2u\bl2u.mk">
+      <Filter>bl2u</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl2u\bl2u.ld.S">
+      <Filter>bl2u</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl2u\aarch64\bl2u_entrypoint.S">
+      <Filter>bl2u\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl31\bl31.ld.S">
+      <Filter>bl31</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl31\bl31.mk">
+      <Filter>bl31</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl31\aarch64\crash_reporting.S">
+      <Filter>bl31\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl31\aarch64\runtime_exceptions.S">
+      <Filter>bl31\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl31\aarch64\bl31_entrypoint.S">
+      <Filter>bl31\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl32\tsp\tsp.ld.S">
+      <Filter>bl32\tsp</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl32\tsp\tsp.mk">
+      <Filter>bl32\tsp</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl32\tsp\aarch64\tsp_request.S">
+      <Filter>bl32\tsp\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl32\tsp\aarch64\tsp_entrypoint.S">
+      <Filter>bl32\tsp\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl32\tsp\aarch64\tsp_exceptions.S">
+      <Filter>bl32\tsp\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl32\sp_min\sp_min.ld.S">
+      <Filter>bl32\sp_min</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl32\sp_min\sp_min.mk">
+      <Filter>bl32\sp_min</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl32\sp_min\aarch32\entrypoint.S">
+      <Filter>bl32\sp_min\aarch32</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\common\aarch64\early_exceptions.S">
+      <Filter>common\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\common\aarch64\debug.S">
+      <Filter>common\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\common\aarch32\debug.S">
+      <Filter>common\aarch32</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\firmware-update.md">
+      <Filter>docs</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\interrupt-framework-design.md">
+      <Filter>docs</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\platform-migration-guide.md">
+      <Filter>docs</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\porting-guide.md">
+      <Filter>docs</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\psci-lib-integration-guide.md">
+      <Filter>docs</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\psci-pd-tree.md">
+      <Filter>docs</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\reset-design.md">
+      <Filter>docs</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\rt-svc-writers-guide.md">
+      <Filter>docs</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\trusted-board-boot.md">
+      <Filter>docs</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\user-guide.md">
+      <Filter>docs</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\auth-framework.md">
+      <Filter>docs</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\change-log.md">
+      <Filter>docs</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\cpu-specific-build-macros.md">
+      <Filter>docs</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\firmware-design.md">
+      <Filter>docs</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\spd\tlk-dispatcher.md">
+      <Filter>docs\spd</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\spd\trusty-dispatcher.md">
+      <Filter>docs\spd</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\spd\optee-dispatcher.md">
+      <Filter>docs\spd</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\plat\xilinx-zynqmp.md">
+      <Filter>docs\plat</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\plat\nvidia-tegra.md">
+      <Filter>docs\plat</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\plat\qemu.md">
+      <Filter>docs\plat</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\diagrams\generate_reset_images.sh">
+      <Filter>docs\diagrams</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\diagrams\reset_code_flow.dia">
+      <Filter>docs\diagrams</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\Makefile">
+      <Filter>tools\cert_create</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\fiptool\Makefile">
+      <Filter>tools\fiptool</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\fiptool\fip_create.sh">
+      <Filter>tools\fiptool</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\tspd\tspd_helpers.S">
+      <Filter>services\spd\tspd</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\tspd\tspd.mk">
+      <Filter>services\spd\tspd</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\trusty\trusty.mk">
+      <Filter>services\spd\trusty</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\trusty\trusty_helpers.S">
+      <Filter>services\spd\trusty</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\tlkd\tlkd_helpers.S">
+      <Filter>services\spd\tlkd</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\tlkd\tlkd.mk">
+      <Filter>services\spd\tlkd</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\opteed\opteed.mk">
+      <Filter>services\spd\opteed</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\opteed\opteed_helpers.S">
+      <Filter>services\spd\opteed</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\soc\common\soc_css.mk">
+      <Filter>plat\arm\soc\common</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\common\css_common.mk">
+      <Filter>plat\arm\css\common</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\common\aarch64\css_helpers.S">
+      <Filter>plat\arm\css\common\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_common.mk">
+      <Filter>plat\arm\common</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\tsp\arm_tsp.mk">
+      <Filter>plat\arm\common\tsp</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\sp_min\arm_sp_min.mk">
+      <Filter>plat\arm\common\sp_min</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\aarch64\arm_helpers.S">
+      <Filter>plat\arm\common\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\aarch32\arm_helpers.S">
+      <Filter>plat\arm\common\aarch32</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\common\board_common.mk">
+      <Filter>plat\arm\board\common</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\common\board_css.mk">
+      <Filter>plat\arm\board\common</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\common\rotpk\arm_rotpk_rsa.der">
+      <Filter>plat\arm\board\common\rotpk</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\common\rotpk\arm_rotpk_rsa_sha256.bin">
+      <Filter>plat\arm\board\common\rotpk</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\common\rotpk\arm_rotprivk_rsa.pem">
+      <Filter>plat\arm\board\common\rotpk</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\common\aarch64\board_arm_helpers.S">
+      <Filter>plat\arm\board\common\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\common\aarch32\board_arm_helpers.S">
+      <Filter>plat\arm\board\common\aarch32</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\platform.mk">
+      <Filter>plat\arm\board\fvp</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\tsp\tsp-fvp.mk">
+      <Filter>plat\arm\board\fvp\tsp</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\sp_min\sp_min-fvp.mk">
+      <Filter>plat\arm\board\fvp\sp_min</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\include\plat_macros.S">
+      <Filter>plat\arm\board\fvp\include</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\aarch64\fvp_helpers.S">
+      <Filter>plat\arm\board\fvp\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\aarch32\fvp_helpers.S">
+      <Filter>plat\arm\board\fvp\aarch32</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\juno\platform.mk">
+      <Filter>plat\arm\board\juno</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\juno\tsp\tsp-juno.mk">
+      <Filter>plat\arm\board\juno\tsp</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\juno\include\plat_macros.S">
+      <Filter>plat\arm\board\juno\include</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\juno\aarch64\juno_helpers.S">
+      <Filter>plat\arm\board\juno\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\aarch64\platform_helpers.S">
+      <Filter>plat\common\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\aarch64\platform_mp_stack.S">
+      <Filter>plat\common\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\aarch64\platform_up_stack.S">
+      <Filter>plat\common\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\aarch32\platform_helpers.S">
+      <Filter>plat\common\aarch32</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\aarch32\platform_mp_stack.S">
+      <Filter>plat\common\aarch32</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\aarch32\platform_up_stack.S">
+      <Filter>plat\common\aarch32</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\css\common\aarch64\css_macros.S">
+      <Filter>include\plat\arm\css\common\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\common\aarch64\arm_macros.S">
+      <Filter>include\plat\arm\common\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\common\aarch64\cci_macros.S">
+      <Filter>include\plat\arm\common\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\pmf\pmf_asm_macros.S">
+      <Filter>include\lib\pmf</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\cpus\aarch32\cpu_macros.S">
+      <Filter>include\lib\cpus\aarch32</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\cpus\aarch64\cpu_macros.S">
+      <Filter>include\lib\cpus\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\aarch32\smcc_macros.S">
+      <Filter>include\lib\aarch32</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\common\asm_macros_common.S">
+      <Filter>include\common</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\common\aarch32\asm_macros.S">
+      <Filter>include\common\aarch32</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\common\aarch32\assert_macros.S">
+      <Filter>include\common\aarch32</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\common\aarch32\el3_common_macros.S">
+      <Filter>include\common\aarch32</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\common\aarch64\assert_macros.S">
+      <Filter>include\common\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\common\aarch64\el3_common_macros.S">
+      <Filter>include\common\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\common\aarch64\asm_macros.S">
+      <Filter>include\common\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\stdlib\stdlib.mk">
+      <Filter>lib\stdlib</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\semihosting\aarch32\semihosting_call.S">
+      <Filter>lib\semihosting\aarch32</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\semihosting\aarch64\semihosting_call.S">
+      <Filter>lib\semihosting\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\psci\psci_lib.mk">
+      <Filter>lib\psci</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\psci\aarch32\psci_helpers.S">
+      <Filter>lib\psci\aarch32</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\psci\aarch64\psci_helpers.S">
+      <Filter>lib\psci\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\locks\exclusive\spinlock.S">
+      <Filter>lib\locks\exclusive</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\locks\exclusive\aarch32\spinlock.S">
+      <Filter>lib\locks\exclusive\aarch32</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\locks\exclusive\aarch64\spinlock.S">
+      <Filter>lib\locks\exclusive\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\libfdt\libfdt.mk">
+      <Filter>lib\libfdt</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\el3_runtime\aarch32\cpu_data.S">
+      <Filter>lib\el3_runtime\aarch32</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\el3_runtime\aarch64\cpu_data.S">
+      <Filter>lib\el3_runtime\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\el3_runtime\aarch64\context.S">
+      <Filter>lib\el3_runtime\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\cpus\cpu-ops.mk">
+      <Filter>lib\cpus</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\cpus\aarch32\aem_generic.S">
+      <Filter>lib\cpus\aarch32</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\cpus\aarch32\cortex_a32.S">
+      <Filter>lib\cpus\aarch32</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\cpus\aarch32\cpu_helpers.S">
+      <Filter>lib\cpus\aarch32</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\cpus\aarch64\cortex_a35.S">
+      <Filter>lib\cpus\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\cpus\aarch64\cortex_a53.S">
+      <Filter>lib\cpus\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\cpus\aarch64\cortex_a57.S">
+      <Filter>lib\cpus\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\cpus\aarch64\cortex_a72.S">
+      <Filter>lib\cpus\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\cpus\aarch64\cortex_a73.S">
+      <Filter>lib\cpus\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\cpus\aarch64\cpu_helpers.S">
+      <Filter>lib\cpus\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\cpus\aarch64\denver.S">
+      <Filter>lib\cpus\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\cpus\aarch64\aem_generic.S">
+      <Filter>lib\cpus\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\aarch64\misc_helpers.S">
+      <Filter>lib\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\aarch64\cache_helpers.S">
+      <Filter>lib\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\aarch32\cache_helpers.S">
+      <Filter>lib\aarch32</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\aarch32\misc_helpers.S">
+      <Filter>lib\aarch32</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\make_helpers\defaults.mk">
+      <Filter>make_helpers</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\make_helpers\msys.mk">
+      <Filter>make_helpers</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\make_helpers\plat_helpers.mk">
+      <Filter>make_helpers</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\make_helpers\unix.mk">
+      <Filter>make_helpers</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\make_helpers\windows.mk">
+      <Filter>make_helpers</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\make_helpers\build_env.mk">
+      <Filter>make_helpers</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\make_helpers\build_macros.mk">
+      <Filter>make_helpers</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\make_helpers\cygwin.mk">
+      <Filter>make_helpers</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\make_helpers\tbbr\tbbr_tools.mk">
+      <Filter>make_helpers\tbbr</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\fdts\fvp-base-gicv3-psci.dtb">
+      <Filter>fdts</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\fdts\fvp-base-gicv3-psci.dts">
+      <Filter>fdts</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\fdts\fvp-base-gicv3-psci-aarch32.dtb">
+      <Filter>fdts</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\fdts\fvp-base-gicv3-psci-aarch32.dts">
+      <Filter>fdts</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\fdts\fvp-foundation-gicv2-psci.dtb">
+      <Filter>fdts</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\fdts\fvp-foundation-gicv2-psci.dts">
+      <Filter>fdts</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\fdts\fvp-foundation-gicv3-psci.dtb">
+      <Filter>fdts</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\fdts\fvp-foundation-gicv3-psci.dts">
+      <Filter>fdts</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\fdts\fvp-foundation-motherboard.dtsi">
+      <Filter>fdts</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\fdts\rtsm_ve-motherboard.dtsi">
+      <Filter>fdts</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\fdts\fvp-base-gicv2-psci.dtb">
+      <Filter>fdts</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\fdts\fvp-base-gicv2-psci.dts">
+      <Filter>fdts</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\fdts\fvp-base-gicv2-psci-aarch32.dtb">
+      <Filter>fdts</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\fdts\fvp-base-gicv2-psci-aarch32.dts">
+      <Filter>fdts</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\pl011\pl011_console.S">
+      <Filter>drivers\arm\pl011</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\auth\mbedtls\mbedtls_common.mk">
+      <Filter>drivers\auth\mbedtls</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\auth\mbedtls\mbedtls_crypto.mk">
+      <Filter>drivers\auth\mbedtls</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\auth\mbedtls\mbedtls_x509.mk">
+      <Filter>drivers\auth\mbedtls</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\cadence\uart\cdns_console.S">
+      <Filter>drivers\cadence\uart</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\cadence\uart\aarch64\cdns_console.S">
+      <Filter>drivers\cadence\uart\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\console\skeleton_console.S">
+      <Filter>drivers\console</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\console\console.S">
+      <Filter>drivers\console</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\console\aarch32\console.S">
+      <Filter>drivers\console\aarch32</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\console\aarch32\skeleton_console.S">
+      <Filter>drivers\console\aarch32</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\console\aarch64\skeleton_console.S">
+      <Filter>drivers\console\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\console\aarch64\console.S">
+      <Filter>drivers\console\aarch64</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\ti\uart\16550_console.S">
+      <Filter>drivers\ti\uart</Filter>
+    </None>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\ti\uart\aarch64\16550_console.S">
+      <Filter>drivers\ti\uart\aarch64</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\..\arm_tf\arm-trusted-firmware\dco.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="bl1">
+      <UniqueIdentifier>{cae8172c-3194-4813-b661-2a99955d91d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bl1\aarch32">
+      <UniqueIdentifier>{d90c2d2d-041f-4b82-b49b-61eb864230c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bl1\aarch64">
+      <UniqueIdentifier>{9343c4f9-7cd4-4070-8fcd-394eb847be45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bl1\tbbr">
+      <UniqueIdentifier>{ad1079b7-4089-4da3-b568-051b0c829112}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bl2">
+      <UniqueIdentifier>{65d1c361-7e2e-4e76-ae0a-bdf292d8a335}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bl2\aarch32">
+      <UniqueIdentifier>{c24a4a1c-dfd2-48f0-9107-1a75b75fd5ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bl2\aarch64">
+      <UniqueIdentifier>{6bdd7e26-9160-4f28-acd9-b093284eef47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bl2u">
+      <UniqueIdentifier>{c0cf7688-eec9-4697-b8ec-a6039f03dd46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bl2u\aarch64">
+      <UniqueIdentifier>{c1e35713-4fbf-4426-ac4e-3306986f07ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bl31">
+      <UniqueIdentifier>{08a66a10-b664-4539-85d5-ec6eff456d02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bl31\aarch64">
+      <UniqueIdentifier>{82e8fbf8-bed2-47eb-89b7-14a550e42385}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bl32">
+      <UniqueIdentifier>{dd000bf0-7691-4360-9d33-c0bffc58464e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bl32\sp_min">
+      <UniqueIdentifier>{9db3e125-c581-4ad9-a086-f6a9e05e99b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bl32\tsp">
+      <UniqueIdentifier>{28e4f928-5835-43a1-b25a-6c4a68e244d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bl32\tsp\aarch64">
+      <UniqueIdentifier>{ee89f1bb-2f21-402b-9423-d9ce96f32d1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bl32\sp_min\aarch32">
+      <UniqueIdentifier>{18dc4337-e816-46db-94e1-3ce071bf70ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{dd2c6389-cf2d-43cc-b4f1-f15823f6686a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\aarch32">
+      <UniqueIdentifier>{5bddba7f-39c4-4400-afb2-5ba57aeedcc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\aarch64">
+      <UniqueIdentifier>{5296cf29-19ad-4e96-9f42-b8d839646ebb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="docs">
+      <UniqueIdentifier>{33f6e627-55e3-4625-9d67-ce5c5e768112}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="docs\diagrams">
+      <UniqueIdentifier>{eb8a00ec-6eb3-4a8b-9e48-fc231a9f5e3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="docs\spd">
+      <UniqueIdentifier>{7319fdaf-9b8f-494b-9f25-80bacfa92220}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="docs\plat">
+      <UniqueIdentifier>{104759fe-3dab-4499-9e05-635541ec63d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{a638b549-c003-40be-adbe-8bb35bad1ee6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="services">
+      <UniqueIdentifier>{d2e192da-bdd0-4bfb-9762-898424c40281}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat">
+      <UniqueIdentifier>{bf554bd1-145f-4835-8c6e-8bde41a0e34a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers">
+      <UniqueIdentifier>{4c1b10cd-b130-465a-a56b-af0ab96e3b92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fdts">
+      <UniqueIdentifier>{fa3bd8ee-1620-4346-9009-531e0545c927}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{4a59363d-d2fd-4ea3-a8f2-e418733b2562}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{1b327cf3-c9a7-4e02-9b0d-ce55d7f54ba7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="make_helpers">
+      <UniqueIdentifier>{b9c2d149-4f9d-403a-8a50-2e6e7dae04c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\cert_create">
+      <UniqueIdentifier>{bbd93919-a46f-492c-bed3-a73e49a14727}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\fiptool">
+      <UniqueIdentifier>{83f98679-a600-4a43-bf0d-9d60d3347bc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\cert_create\include">
+      <UniqueIdentifier>{c20af8e1-9ef7-424d-a57b-2fcd3d16daaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\cert_create\src">
+      <UniqueIdentifier>{15bc551e-ecf6-4d5c-b785-5282e410879d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\cert_create\include\tbbr">
+      <UniqueIdentifier>{f760ed27-2d32-4fc7-8d77-43baeaa6f553}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\cert_create\src\tbbr">
+      <UniqueIdentifier>{9228f2ad-95f1-4ea7-9794-09e51fc73691}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="services\std_svc">
+      <UniqueIdentifier>{f0c485d8-49b3-4aae-a3a3-4e8a7099b377}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="services\spd">
+      <UniqueIdentifier>{e48af01d-1a50-46d8-b226-d794b10d4684}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="services\spd\tspd">
+      <UniqueIdentifier>{1a22d5eb-87e6-4142-bbf5-e06aaa744434}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="services\spd\trusty">
+      <UniqueIdentifier>{0f609e31-3aae-4f9d-9178-180e11ca3d9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="services\spd\tlkd">
+      <UniqueIdentifier>{83b9d548-5815-4f16-b88c-d7d3a64b00db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="services\spd\opteed">
+      <UniqueIdentifier>{09907098-11d3-4f62-a5e9-9e29fe17286b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm">
+      <UniqueIdentifier>{a9588cd2-7708-48dd-b021-7c1c3e375e3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\common">
+      <UniqueIdentifier>{21e21bb0-6372-46a9-9352-f89b99820d84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\compat">
+      <UniqueIdentifier>{0c2d5f08-9da3-4811-8dcf-e3495c671267}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\mediatek">
+      <UniqueIdentifier>{5e98d43e-a8b5-4032-9f2d-8e0d7ffc791a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\xilinx">
+      <UniqueIdentifier>{b84f044d-b403-4b76-b6a3-bcd3b9d4481c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\rockchip">
+      <UniqueIdentifier>{b04600e9-aa90-4ff1-9e2a-72aaab56d060}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\qemu">
+      <UniqueIdentifier>{83227590-b17d-482e-8853-f52a6eefa601}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\nvidia">
+      <UniqueIdentifier>{9242013b-a4f5-4d76-a00b-cdc6515e1219}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\board">
+      <UniqueIdentifier>{dcfb6d89-17bd-4c0f-8965-eb6281478cea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\common">
+      <UniqueIdentifier>{0ee42b3a-4d8f-4093-b846-0fe4e99c1d5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\css">
+      <UniqueIdentifier>{6109445c-be71-4bad-8e98-4131a5c23bbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\soc">
+      <UniqueIdentifier>{bd821c1c-ec4e-4dc4-ae4b-d77e07bc42e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\soc\common">
+      <UniqueIdentifier>{a119f580-f01a-4580-944f-664d72e70af8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\css\drivers">
+      <UniqueIdentifier>{4ae87402-81ce-4b36-99c4-57e9ab3a54ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\css\common">
+      <UniqueIdentifier>{3bf1a00a-0665-417d-90d0-c2ed3576e82d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\css\common\aarch64">
+      <UniqueIdentifier>{dba8be2f-840c-4835-9be2-fd0d4b39b2c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\css\drivers\scp">
+      <UniqueIdentifier>{cfeaaf5d-06b8-4573-a594-7d49bc67eb28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\css\drivers\scpi">
+      <UniqueIdentifier>{b29390da-90c0-4209-9a90-cca7c89984e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\common\tsp">
+      <UniqueIdentifier>{92be4117-d9f1-40dc-b3f9-d3fe31b3854d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\common\aarch32">
+      <UniqueIdentifier>{77132703-39e1-4d44-8a09-7ac8e3653a2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\common\aarch64">
+      <UniqueIdentifier>{280057c4-7648-4abb-80db-27938aefe1df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\common\sp_min">
+      <UniqueIdentifier>{9bf647c0-5c66-4118-b0d4-21f52f09fd7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\board\juno">
+      <UniqueIdentifier>{23702219-72a5-4a03-9ed0-8f47c1d61cc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\board\fvp">
+      <UniqueIdentifier>{7728258b-b54c-4173-9354-66c985731157}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\board\common">
+      <UniqueIdentifier>{dc4a7bc5-940b-4875-ac56-0fb8f62e2bf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\board\common\rotpk">
+      <UniqueIdentifier>{b68a799c-8e56-48a7-abbc-7aba7c3a2a5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\board\common\aarch32">
+      <UniqueIdentifier>{0ee15322-ce66-4eaa-af5f-f03dfce19884}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\board\common\aarch64">
+      <UniqueIdentifier>{d6198a68-d1a5-4e5b-8903-2feb2f575e5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\board\common\drivers">
+      <UniqueIdentifier>{c3e371a2-7c13-4a8c-8e3e-a4974218aa14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\board\common\drivers\norflash">
+      <UniqueIdentifier>{7f553f00-8def-4978-aa1f-7739d85d545e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\board\fvp\tsp">
+      <UniqueIdentifier>{34cffc7c-e4eb-4569-b2c5-6a4464bd5033}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\board\fvp\sp_min">
+      <UniqueIdentifier>{8f94187d-4873-4f72-9308-4a2d710b1d17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\board\fvp\aarch32">
+      <UniqueIdentifier>{9819dfb5-baae-4563-853d-ec41f79c34fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\board\fvp\aarch64">
+      <UniqueIdentifier>{9b166fb6-e33f-4e54-af55-246931479c74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\board\fvp\drivers">
+      <UniqueIdentifier>{72e4f986-30c8-419b-8aa7-5f54c4b90ed9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\board\fvp\include">
+      <UniqueIdentifier>{77b3b8a1-de2a-406e-8461-d6c90d0e2825}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\board\fvp\drivers\pwrc">
+      <UniqueIdentifier>{533653c8-c39b-47d3-8638-cdaf43361f76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\board\juno\tsp">
+      <UniqueIdentifier>{c4edd401-66b9-4ae8-9a0c-4500bded8171}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\board\juno\aarch64">
+      <UniqueIdentifier>{17bb0ff1-f458-4eb7-8308-532bb76fc841}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\arm\board\juno\include">
+      <UniqueIdentifier>{f2c03e74-c08c-41b6-b2ae-21f0f27f3d79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\common\aarch32">
+      <UniqueIdentifier>{377ddc27-ae6b-4534-a057-053be2819c17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\common\aarch64">
+      <UniqueIdentifier>{95bcb85d-c265-4fdf-a1a8-3f30dab2e0ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plat\common\tbbr">
+      <UniqueIdentifier>{6a8390dd-6237-4ce4-a35f-e6308e1b1bef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\services">
+      <UniqueIdentifier>{6212c513-38cc-4a61-a6be-1b4dd77b0ce0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\plat">
+      <UniqueIdentifier>{9dc67e33-c7d0-4d1c-b7fe-20c7bf336f6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\bl1">
+      <UniqueIdentifier>{835c387f-22e3-45c7-964c-646a2ed5eaad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\bl31">
+      <UniqueIdentifier>{3a6bccfe-15c3-4557-a833-ba3684fb6300}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\bl32">
+      <UniqueIdentifier>{27b8b90b-0f24-4460-8530-249d866ee1df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\common">
+      <UniqueIdentifier>{c7e4cf9e-bdbb-482d-8885-fe6653d65f6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\drivers">
+      <UniqueIdentifier>{363a6ddf-15e2-4630-b7ce-75957bd9f5ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\lib">
+      <UniqueIdentifier>{cac481a4-efc4-4c48-bc5c-f34042c2fc11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\plat\common">
+      <UniqueIdentifier>{9f083dcf-7475-413d-b72f-e83809cbdd79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\plat\arm">
+      <UniqueIdentifier>{de300b2e-2b17-4544-b1d0-6243e44b52a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\plat\arm\soc">
+      <UniqueIdentifier>{5f4d6607-242f-4687-a006-f7b0d3aa00f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\plat\arm\board">
+      <UniqueIdentifier>{23bf5ab3-b10f-4a51-b0fd-6e31ad712319}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\plat\arm\common">
+      <UniqueIdentifier>{129a4067-ce51-4907-9905-0b0e7641c968}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\plat\arm\css">
+      <UniqueIdentifier>{ef7e14ba-49db-4a31-bc16-961fadbb3b55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\plat\arm\soc\common">
+      <UniqueIdentifier>{0e5c40d0-bd4b-49d2-9c7f-c5e02a602641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\plat\arm\css\common">
+      <UniqueIdentifier>{d6b67039-cec1-41ee-8a5a-223b281daa29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\plat\arm\css\common\aarch64">
+      <UniqueIdentifier>{183aa2ed-f8b6-4dc4-bbba-9c2159c74d85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\plat\arm\common\aarch64">
+      <UniqueIdentifier>{c12304af-c2f5-439a-8934-dbcbd0f6934d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\plat\arm\board\common">
+      <UniqueIdentifier>{3d64788f-5a6b-4e14-87eb-6e70a8a012f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\plat\arm\board\common\drivers">
+      <UniqueIdentifier>{b3061703-bf00-472c-8c52-afd68f1f68f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\bl1\tbbr">
+      <UniqueIdentifier>{0667e50f-3bd2-4c2e-804d-ea39f9853b62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\bl32\payloads">
+      <UniqueIdentifier>{0709127a-b8e8-46da-88da-7334cf88d085}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\bl32\tsp">
+      <UniqueIdentifier>{5347dec0-e6a0-4d03-ad94-8be97f0e784c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\bl32\sp_min">
+      <UniqueIdentifier>{d756b43d-74da-4a28-9a10-9a0fb2d7abde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\lib\stdlib">
+      <UniqueIdentifier>{68f487cd-ff70-4abe-aa45-ee563aa17baf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\lib\stdlib\machine">
+      <UniqueIdentifier>{571d5617-7342-4d05-ba2a-a33ab8b5a3a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\lib\stdlib\sys">
+      <UniqueIdentifier>{5cb82813-d305-4441-97d3-1e34eaaa19f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\lib\stdlib\xlocale">
+      <UniqueIdentifier>{11217ca1-6a7d-40f9-8888-40744f080b6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\lib\psci">
+      <UniqueIdentifier>{5026bfda-a8a0-4275-9327-fac31bc686f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\lib\pmf">
+      <UniqueIdentifier>{81d6ab89-b15c-44a2-9ad4-fa1d0f1dd08a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\lib\aarch32">
+      <UniqueIdentifier>{2adc5236-1ca4-4455-820c-9213ab8d1a44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\lib\aarch64">
+      <UniqueIdentifier>{ade25d99-ca87-4568-aeb9-7bff1fd2a2b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\lib\cpus">
+      <UniqueIdentifier>{72ddf2a5-4618-4885-b34b-a5d1440ca515}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\lib\el3_runtime">
+      <UniqueIdentifier>{d03d3dea-cfa1-40f7-9ebf-d0e2cb626020}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\lib\libfdt">
+      <UniqueIdentifier>{2f9a1233-38ab-4c9d-a7ea-02678be16036}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\lib\el3_runtime\aarch32">
+      <UniqueIdentifier>{d7e453b2-46be-4ff2-a5d0-043a68323031}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\lib\el3_runtime\aarch64">
+      <UniqueIdentifier>{5b42a381-9e4d-447e-baaa-eb2e692efdb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\lib\cpus\aarch32">
+      <UniqueIdentifier>{198081db-1b91-4de6-bfd8-4570c18067ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\lib\cpus\aarch64">
+      <UniqueIdentifier>{7b865f19-cac9-4d6c-b7d6-56dfd46caa14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\common\aarch32">
+      <UniqueIdentifier>{496137a2-0362-4fe0-9b81-0aa3f041f419}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\common\aarch64">
+      <UniqueIdentifier>{f9392f10-2dcc-45c9-9aa5-17369e6ee080}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\common\tbbr">
+      <UniqueIdentifier>{a9b76269-c65a-4727-9feb-67c024f3a2ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\drivers\ti">
+      <UniqueIdentifier>{a161854a-2ca4-43f2-a496-076c9c9da804}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\drivers\partition">
+      <UniqueIdentifier>{307ae7f3-1c0c-42de-ba52-99db9f01a6b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\drivers\arm">
+      <UniqueIdentifier>{9880c7e4-1012-4547-a467-d7e1576181b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\drivers\auth">
+      <UniqueIdentifier>{94c13ef6-368e-4f0e-b754-d9a68a6072f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\drivers\cadence">
+      <UniqueIdentifier>{b2382270-f404-4275-ad03-411477770f3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\drivers\io">
+      <UniqueIdentifier>{02c4d7d2-ca59-4ec0-a9eb-02e3fa3b50a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\drivers\auth\mbedtls">
+      <UniqueIdentifier>{50225c5a-5f39-4120-b593-a94ba613932a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\drivers\ti\uart">
+      <UniqueIdentifier>{9af52d45-6f17-4c93-bb15-7703d60da65f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\xlat_tables">
+      <UniqueIdentifier>{268a243d-dfb7-4291-9f64-e4b39bf2e60a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\xlat_tables\aarch32">
+      <UniqueIdentifier>{0f46043f-5c47-4c3e-8217-dac004f709d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\xlat_tables\aarch64">
+      <UniqueIdentifier>{628e2a1a-a289-455c-b67a-83d8f41199e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\stdlib">
+      <UniqueIdentifier>{3ccf0cce-c042-4dca-9139-3c0c909a22e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\semihosting">
+      <UniqueIdentifier>{453ac8d0-a3d6-4837-b7d0-ff0c3cb807b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\psci">
+      <UniqueIdentifier>{404ec3d2-3af9-417b-885f-3bd0458a91ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\pmf">
+      <UniqueIdentifier>{d32b3398-cb9d-4893-b1e0-9d2d3a5491f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\aarch32">
+      <UniqueIdentifier>{1dafd0f5-8bcc-4b31-8b73-0e59772767c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\aarch64">
+      <UniqueIdentifier>{e00ef5da-cd93-4447-9bf4-499fdaaecf8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\cpus">
+      <UniqueIdentifier>{55e71476-019b-4d92-a2c8-382521451071}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\el3_runtime">
+      <UniqueIdentifier>{ea2ac853-ed53-4f72-a8d2-c5408418d8e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\libfdt">
+      <UniqueIdentifier>{38f8720b-dd9e-4e77-9097-ddb0cc486040}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\locks">
+      <UniqueIdentifier>{e0bf7089-8c3c-4161-96bb-e66a27c8e15a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\semihosting\aarch64">
+      <UniqueIdentifier>{f5b5aa58-b0c5-42bb-800c-6aff49fa85ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\semihosting\aarch32">
+      <UniqueIdentifier>{e07276b0-9180-4910-8720-c68ddd6ccebc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\psci\aarch32">
+      <UniqueIdentifier>{a85b6859-13e9-4e94-9cda-23c50260732f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\psci\aarch64">
+      <UniqueIdentifier>{5bcf606d-3551-4ab3-afe2-1ee23df6872a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\locks\bakery">
+      <UniqueIdentifier>{5b2b8bca-3ec6-4157-b9ad-6d6aed79f63b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\locks\exclusive">
+      <UniqueIdentifier>{b84c5abb-72cb-4545-ac09-9a86bbd0f7b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\locks\exclusive\aarch32">
+      <UniqueIdentifier>{038eda02-0365-4d39-a9c6-1211fc2e2f54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\locks\exclusive\aarch64">
+      <UniqueIdentifier>{afbfca1b-b3a8-4f0f-93db-ace91b7d41ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\el3_runtime\aarch64">
+      <UniqueIdentifier>{c73e1322-e18f-4e76-9c07-505b76fe1dff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\el3_runtime\aarch32">
+      <UniqueIdentifier>{e5090e94-fdd1-45a0-aa40-fb3db43cba6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\cpus\aarch32">
+      <UniqueIdentifier>{598a7b15-2a9a-479d-a916-1749ac5239ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\cpus\aarch64">
+      <UniqueIdentifier>{aaf00c75-2bd4-4ebe-a02c-3d052948f04e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="make_helpers\tbbr">
+      <UniqueIdentifier>{1130d0f8-11e4-443f-9d4c-5c0d341e1303}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\arm">
+      <UniqueIdentifier>{8e9e83a5-1e85-46ed-b387-e2370476caeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\auth">
+      <UniqueIdentifier>{591a1465-136f-4975-a626-d76a674c7c73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\cadence">
+      <UniqueIdentifier>{d0920dba-cea6-4d64-b1dc-9e585467dc2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\console">
+      <UniqueIdentifier>{8847c91b-b943-4f3b-8444-252002b95eef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\delay_timer">
+      <UniqueIdentifier>{98cbeab5-b362-43ec-9165-a03fb2a7dbea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\emmc">
+      <UniqueIdentifier>{b8e23eeb-26f2-4992-8337-b1c2f5f15693}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\gpio">
+      <UniqueIdentifier>{7174fc02-b7ad-4e67-9b57-a67b0ba33c4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\ti">
+      <UniqueIdentifier>{80b75afc-28a0-4e7f-921e-8255459a96cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\partition">
+      <UniqueIdentifier>{cb7dbb28-e500-4dae-9924-e7ff75466822}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\io">
+      <UniqueIdentifier>{7aaaecbf-6ea5-4634-9b8e-6f11eeaea8d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\arm\cci">
+      <UniqueIdentifier>{2d429715-aa34-4fae-a76f-a8a6364ff835}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\arm\cci400">
+      <UniqueIdentifier>{89065edc-cc54-4abc-8fbb-ff83f7561cd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\arm\ccn">
+      <UniqueIdentifier>{133a8a75-a577-48c9-8ae8-0e2c8305f290}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\arm\gic">
+      <UniqueIdentifier>{bf181e9f-d5f4-455f-aabd-abc758147a15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\arm\tzc400">
+      <UniqueIdentifier>{e05c7e81-e919-4dfa-96d9-29122c4117d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\arm\tzc">
+      <UniqueIdentifier>{eb0980cd-398d-4de2-a108-c7b56dc53cf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\arm\sp805">
+      <UniqueIdentifier>{066acf8f-e164-4cfe-b65a-5c7b61b5bf2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\arm\sp804">
+      <UniqueIdentifier>{38884b68-55c9-45ab-bccf-2e0c9b201881}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\arm\pl061">
+      <UniqueIdentifier>{0d4a197f-9a73-48ea-afa0-16c778b06c88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\arm\pl011">
+      <UniqueIdentifier>{09c0e6ed-237d-4488-bdc0-3e1f969610f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\arm\gic\common">
+      <UniqueIdentifier>{f82ddfe5-3dd3-45b1-b078-8b0a8128fa12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\arm\gic\v3">
+      <UniqueIdentifier>{1fcc69ff-05c5-491b-a09a-e4634a0af1ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\arm\gic\v2">
+      <UniqueIdentifier>{903ed149-0250-475e-8315-17292be855b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\arm\pl011\aarch32">
+      <UniqueIdentifier>{274ca8d3-bf43-408a-9c36-917727c0c45b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\arm\pl011\aarch64">
+      <UniqueIdentifier>{f4e177e7-0abf-4286-9553-901e932f4286}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\auth\mbedtls">
+      <UniqueIdentifier>{dd54c46a-6053-4dfd-817a-cfa272b222f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\auth\tbbr">
+      <UniqueIdentifier>{dd9e6c59-7c95-4408-947c-be20b0623b34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\cadence\uart">
+      <UniqueIdentifier>{5db758ec-cb82-49fc-86ba-8c6399d883ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\cadence\uart\aarch64">
+      <UniqueIdentifier>{806f2d0c-5ea9-456e-8c1b-5dd9a9c7b87c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\console\aarch32">
+      <UniqueIdentifier>{b1fdae59-d424-44b8-ab30-adc296367143}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\console\aarch64">
+      <UniqueIdentifier>{df3ec15b-051e-4d37-90d3-818ecd9c4c0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\ti\uart">
+      <UniqueIdentifier>{8851964e-f1ab-4815-88d8-7c490b9bc23c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drivers\ti\uart\aarch64">
+      <UniqueIdentifier>{d79716d0-c151-4a3d-af5f-2297205b5dc0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl1\bl1_fwu.c">
+      <Filter>bl1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl1\bl1_main.c">
+      <Filter>bl1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl1\aarch32\bl1_arch_setup.c">
+      <Filter>bl1\aarch32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl1\aarch32\bl1_context_mgmt.c">
+      <Filter>bl1\aarch32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl1\aarch64\bl1_arch_setup.c">
+      <Filter>bl1\aarch64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl1\aarch64\bl1_context_mgmt.c">
+      <Filter>bl1\aarch64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl1\tbbr\tbbr_img_desc.c">
+      <Filter>bl1\tbbr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl2\bl2_image_load_v2.c">
+      <Filter>bl2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl2\bl2_main.c">
+      <Filter>bl2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl2\bl2_image_load.c">
+      <Filter>bl2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl2\aarch32\bl2_arch_setup.c">
+      <Filter>bl2\aarch32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl2\aarch64\bl2_arch_setup.c">
+      <Filter>bl2\aarch64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl2u\bl2u_main.c">
+      <Filter>bl2u</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl31\bl31_context_mgmt.c">
+      <Filter>bl31</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl31\bl31_main.c">
+      <Filter>bl31</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl31\interrupt_mgmt.c">
+      <Filter>bl31</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl32\tsp\tsp_interrupt.c">
+      <Filter>bl32\tsp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl32\tsp\tsp_main.c">
+      <Filter>bl32\tsp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl32\tsp\tsp_timer.c">
+      <Filter>bl32\tsp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl32\sp_min\sp_min_main.c">
+      <Filter>bl32\sp_min</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\common\runtime_svc.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\common\tf_printf.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\common\bl_common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\common\desc_image_load.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\src\cmd_opt.c">
+      <Filter>tools\cert_create\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\src\ext.c">
+      <Filter>tools\cert_create\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\src\key.c">
+      <Filter>tools\cert_create\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\src\main.c">
+      <Filter>tools\cert_create\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\src\sha.c">
+      <Filter>tools\cert_create\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\src\cert.c">
+      <Filter>tools\cert_create\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\src\tbbr\tbb_cert.c">
+      <Filter>tools\cert_create\src\tbbr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\src\tbbr\tbb_ext.c">
+      <Filter>tools\cert_create\src\tbbr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\src\tbbr\tbb_key.c">
+      <Filter>tools\cert_create\src\tbbr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\fiptool\tbbr_config.c">
+      <Filter>tools\fiptool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\fiptool\fiptool.c">
+      <Filter>tools\fiptool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\std_svc\std_svc_setup.c">
+      <Filter>services\std_svc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\tspd\tspd_main.c">
+      <Filter>services\spd\tspd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\tspd\tspd_pm.c">
+      <Filter>services\spd\tspd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\tspd\tspd_common.c">
+      <Filter>services\spd\tspd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\trusty\trusty.c">
+      <Filter>services\spd\trusty</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\tlkd\tlkd_main.c">
+      <Filter>services\spd\tlkd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\tlkd\tlkd_pm.c">
+      <Filter>services\spd\tlkd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\tlkd\tlkd_common.c">
+      <Filter>services\spd\tlkd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\opteed\opteed_main.c">
+      <Filter>services\spd\opteed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\opteed\opteed_pm.c">
+      <Filter>services\spd\opteed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\opteed\opteed_common.c">
+      <Filter>services\spd\opteed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\soc\common\soc_css_security.c">
+      <Filter>plat\arm\soc\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\common\css_bl2u_setup.c">
+      <Filter>plat\arm\css\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\common\css_pm.c">
+      <Filter>plat\arm\css\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\common\css_scp_bootloader.c">
+      <Filter>plat\arm\css\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\common\css_topology.c">
+      <Filter>plat\arm\css\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\common\css_bl1_setup.c">
+      <Filter>plat\arm\css\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\common\css_bl2_setup.c">
+      <Filter>plat\arm\css\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\drivers\scpi\css_scpi.c">
+      <Filter>plat\arm\css\drivers\scpi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\drivers\scpi\css_mhu.c">
+      <Filter>plat\arm\css\drivers\scpi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\drivers\scp\css_pm_scpi.c">
+      <Filter>plat\arm\css\drivers\scp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_gicv2.c">
+      <Filter>plat\arm\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_gicv3.c">
+      <Filter>plat\arm\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_gicv3_legacy.c">
+      <Filter>plat\arm\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_image_load.c">
+      <Filter>plat\arm\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_io_storage.c">
+      <Filter>plat\arm\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_pm.c">
+      <Filter>plat\arm\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_sip_svc.c">
+      <Filter>plat\arm\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_topology.c">
+      <Filter>plat\arm\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_tzc_dmc500.c">
+      <Filter>plat\arm\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_tzc400.c">
+      <Filter>plat\arm\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_bl1_fwu.c">
+      <Filter>plat\arm\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_bl1_setup.c">
+      <Filter>plat\arm\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_bl2_setup.c">
+      <Filter>plat\arm\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_bl2u_setup.c">
+      <Filter>plat\arm\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_bl31_setup.c">
+      <Filter>plat\arm\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_cci.c">
+      <Filter>plat\arm\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_ccn.c">
+      <Filter>plat\arm\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_common.c">
+      <Filter>plat\arm\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\tsp\arm_tsp_setup.c">
+      <Filter>plat\arm\common\tsp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\sp_min\arm_sp_min_setup.c">
+      <Filter>plat\arm\common\sp_min</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\aarch64\arm_bl2_mem_params_desc.c">
+      <Filter>plat\arm\common\aarch64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\aarch32\arm_bl2_mem_params_desc.c">
+      <Filter>plat\arm\common\aarch32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\common\board_css_common.c">
+      <Filter>plat\arm\board\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\common\board_arm_trusted_boot.c">
+      <Filter>plat\arm\board\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\common\drivers\norflash\norflash.c">
+      <Filter>plat\arm\board\common\drivers\norflash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\fvp_err.c">
+      <Filter>plat\arm\board\fvp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\fvp_io_storage.c">
+      <Filter>plat\arm\board\fvp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\fvp_pm.c">
+      <Filter>plat\arm\board\fvp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\fvp_security.c">
+      <Filter>plat\arm\board\fvp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\fvp_topology.c">
+      <Filter>plat\arm\board\fvp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\fvp_trusted_boot.c">
+      <Filter>plat\arm\board\fvp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\fvp_bl1_setup.c">
+      <Filter>plat\arm\board\fvp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\fvp_bl2_setup.c">
+      <Filter>plat\arm\board\fvp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\fvp_bl2u_setup.c">
+      <Filter>plat\arm\board\fvp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\fvp_bl31_setup.c">
+      <Filter>plat\arm\board\fvp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\fvp_common.c">
+      <Filter>plat\arm\board\fvp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\tsp\fvp_tsp_setup.c">
+      <Filter>plat\arm\board\fvp\tsp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\sp_min\fvp_sp_min_setup.c">
+      <Filter>plat\arm\board\fvp\sp_min</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\drivers\pwrc\fvp_pwrc.c">
+      <Filter>plat\arm\board\fvp\drivers\pwrc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\juno\juno_pm.c">
+      <Filter>plat\arm\board\juno</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\juno\juno_security.c">
+      <Filter>plat\arm\board\juno</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\juno\juno_topology.c">
+      <Filter>plat\arm\board\juno</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\juno\juno_bl1_setup.c">
+      <Filter>plat\arm\board\juno</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\juno\juno_err.c">
+      <Filter>plat\arm\board\juno</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\plat_gicv2.c">
+      <Filter>plat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\plat_gicv3.c">
+      <Filter>plat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\plat_psci_common.c">
+      <Filter>plat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\plat_bl1_common.c">
+      <Filter>plat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\plat_gic.c">
+      <Filter>plat\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\tbbr\plat_tbbr.c">
+      <Filter>plat\common\tbbr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\aarch64\plat_psci_common.c">
+      <Filter>plat\common\aarch64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\aarch64\plat_common.c">
+      <Filter>plat\common\aarch64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\aarch32\plat_common.c">
+      <Filter>plat\common\aarch32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\xlat_tables\xlat_tables_common.c">
+      <Filter>lib\xlat_tables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\xlat_tables\aarch64\xlat_tables.c">
+      <Filter>lib\xlat_tables\aarch64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\xlat_tables\aarch32\xlat_tables.c">
+      <Filter>lib\xlat_tables\aarch32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\stdlib\strchr.c">
+      <Filter>lib\stdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\stdlib\strcmp.c">
+      <Filter>lib\stdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\stdlib\strlen.c">
+      <Filter>lib\stdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\stdlib\strncmp.c">
+      <Filter>lib\stdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\stdlib\subr_prf.c">
+      <Filter>lib\stdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\stdlib\abort.c">
+      <Filter>lib\stdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\stdlib\assert.c">
+      <Filter>lib\stdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\stdlib\exit.c">
+      <Filter>lib\stdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\stdlib\mem.c">
+      <Filter>lib\stdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\stdlib\printf.c">
+      <Filter>lib\stdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\stdlib\putchar.c">
+      <Filter>lib\stdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\stdlib\puts.c">
+      <Filter>lib\stdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\stdlib\sscanf.c">
+      <Filter>lib\stdlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\semihosting\semihosting.c">
+      <Filter>lib\semihosting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\psci\psci_off.c">
+      <Filter>lib\psci</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\psci\psci_on.c">
+      <Filter>lib\psci</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\psci\psci_setup.c">
+      <Filter>lib\psci</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\psci\psci_stat.c">
+      <Filter>lib\psci</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\psci\psci_suspend.c">
+      <Filter>lib\psci</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\psci\psci_system_off.c">
+      <Filter>lib\psci</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\psci\psci_common.c">
+      <Filter>lib\psci</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\psci\psci_main.c">
+      <Filter>lib\psci</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\pmf\pmf_smc.c">
+      <Filter>lib\pmf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\pmf\pmf_main.c">
+      <Filter>lib\pmf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\locks\bakery\bakery_lock_coherent.c">
+      <Filter>lib\locks\bakery</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\locks\bakery\bakery_lock_normal.c">
+      <Filter>lib\locks\bakery</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\libfdt\fdt_ro.c">
+      <Filter>lib\libfdt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\libfdt\fdt_rw.c">
+      <Filter>lib\libfdt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\libfdt\fdt_strerror.c">
+      <Filter>lib\libfdt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\libfdt\fdt_sw.c">
+      <Filter>lib\libfdt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\libfdt\fdt_wip.c">
+      <Filter>lib\libfdt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\libfdt\fdt.c">
+      <Filter>lib\libfdt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\libfdt\fdt_addresses.c">
+      <Filter>lib\libfdt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\libfdt\fdt_empty_tree.c">
+      <Filter>lib\libfdt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\el3_runtime\cpu_data_array.c">
+      <Filter>lib\el3_runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\el3_runtime\aarch32\context_mgmt.c">
+      <Filter>lib\el3_runtime\aarch32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\el3_runtime\aarch64\context_mgmt.c">
+      <Filter>lib\el3_runtime\aarch64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\aarch64\xlat_tables.c">
+      <Filter>lib\aarch64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\cci\cci.c">
+      <Filter>drivers\arm\cci</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\cci400\cci400.c">
+      <Filter>drivers\arm\cci400</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\ccn\ccn.c">
+      <Filter>drivers\arm\ccn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\gic\gic_v2.c">
+      <Filter>drivers\arm\gic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\gic\gic_v3.c">
+      <Filter>drivers\arm\gic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\gic\arm_gic.c">
+      <Filter>drivers\arm\gic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\gic\v3\gicv3_helpers.c">
+      <Filter>drivers\arm\gic\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\gic\v3\gicv3_main.c">
+      <Filter>drivers\arm\gic\v3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\gic\v2\gicv2_main.c">
+      <Filter>drivers\arm\gic\v2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\gic\v2\gicv2_helpers.c">
+      <Filter>drivers\arm\gic\v2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\gic\common\gic_common.c">
+      <Filter>drivers\arm\gic\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\pl061\pl061_gpio.c">
+      <Filter>drivers\arm\pl061</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\sp804\sp804_delay_timer.c">
+      <Filter>drivers\arm\sp804</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\tzc400\tzc400.c">
+      <Filter>drivers\arm\tzc400</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\tzc\tzc_dmc500.c">
+      <Filter>drivers\arm\tzc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\tzc\tzc400.c">
+      <Filter>drivers\arm\tzc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\tzc\tzc_common_private.c">
+      <Filter>drivers\arm\tzc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\sp805\sp805.c">
+      <Filter>drivers\arm\sp805</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\auth\crypto_mod.c">
+      <Filter>drivers\auth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\auth\img_parser_mod.c">
+      <Filter>drivers\auth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\auth\auth_mod.c">
+      <Filter>drivers\auth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\auth\tbbr\tbbr_cot.c">
+      <Filter>drivers\auth\tbbr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\auth\mbedtls\mbedtls_crypto.c">
+      <Filter>drivers\auth\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\auth\mbedtls\mbedtls_x509_parser.c">
+      <Filter>drivers\auth\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\auth\mbedtls\mbedtls_common.c">
+      <Filter>drivers\auth\mbedtls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\delay_timer\delay_timer.c">
+      <Filter>drivers\delay_timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\delay_timer\generic_delay_timer.c">
+      <Filter>drivers\delay_timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\emmc\emmc.c">
+      <Filter>drivers\emmc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\gpio\gpio.c">
+      <Filter>drivers\gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\io\io_fip.c">
+      <Filter>drivers\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\io\io_memmap.c">
+      <Filter>drivers\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\io\io_semihosting.c">
+      <Filter>drivers\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\io\io_storage.c">
+      <Filter>drivers\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\io\io_block.c">
+      <Filter>drivers\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\io\io_dummy.c">
+      <Filter>drivers\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\partition\partition.c">
+      <Filter>drivers\partition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\partition\gpt.c">
+      <Filter>drivers\partition</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl1\bl1_private.h">
+      <Filter>bl1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl2\bl2_private.h">
+      <Filter>bl2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl32\tsp\tsp_private.h">
+      <Filter>bl32\tsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl32\sp_min\sp_min_private.h">
+      <Filter>bl32\sp_min</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\include\cmd_opt.h">
+      <Filter>tools\cert_create\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\include\debug.h">
+      <Filter>tools\cert_create\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\include\ext.h">
+      <Filter>tools\cert_create\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\include\key.h">
+      <Filter>tools\cert_create\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\include\sha.h">
+      <Filter>tools\cert_create\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\include\cert.h">
+      <Filter>tools\cert_create\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\include\tbbr\tbb_ext.h">
+      <Filter>tools\cert_create\include\tbbr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\include\tbbr\tbb_key.h">
+      <Filter>tools\cert_create\include\tbbr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\include\tbbr\tbb_cert.h">
+      <Filter>tools\cert_create\include\tbbr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\fiptool\tbbr_config.h">
+      <Filter>tools\fiptool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\fiptool\fiptool.h">
+      <Filter>tools\fiptool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\tspd\tspd_private.h">
+      <Filter>services\spd\tspd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\trusty\smcall.h">
+      <Filter>services\spd\trusty</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\trusty\sm_err.h">
+      <Filter>services\spd\trusty</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\tlkd\tlkd_private.h">
+      <Filter>services\spd\tlkd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\opteed\opteed_private.h">
+      <Filter>services\spd\opteed</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\opteed\teesmc_opteed.h">
+      <Filter>services\spd\opteed</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\opteed\teesmc_opteed_macros.h">
+      <Filter>services\spd\opteed</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\common\css_scp_bootloader.h">
+      <Filter>plat\arm\css\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\drivers\scpi\css_mhu.h">
+      <Filter>plat\arm\css\drivers\scpi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\drivers\scpi\css_scpi.h">
+      <Filter>plat\arm\css\drivers\scpi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\drivers\scp\css_scp.h">
+      <Filter>plat\arm\css\drivers\scp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\fvp_private.h">
+      <Filter>plat\arm\board\fvp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\fvp_def.h">
+      <Filter>plat\arm\board\fvp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\include\platform_def.h">
+      <Filter>plat\arm\board\fvp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\include\platform_oid.h">
+      <Filter>plat\arm\board\fvp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\drivers\pwrc\fvp_pwrc.h">
+      <Filter>plat\arm\board\fvp\drivers\pwrc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\juno\juno_def.h">
+      <Filter>plat\arm\board\juno</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\juno\include\platform_oid.h">
+      <Filter>plat\arm\board\juno\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\juno\include\platform_def.h">
+      <Filter>plat\arm\board\juno\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\services\std_svc.h">
+      <Filter>include\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\common\platform.h">
+      <Filter>include\plat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\common\common_def.h">
+      <Filter>include\plat\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\soc\common\soc_css.h">
+      <Filter>include\plat\arm\soc\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\soc\common\soc_css_def.h">
+      <Filter>include\plat\arm\soc\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\css\common\css_def.h">
+      <Filter>include\plat\arm\css\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\css\common\css_pm.h">
+      <Filter>include\plat\arm\css\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\common\arm_def.h">
+      <Filter>include\plat\arm\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\common\arm_sip_svc.h">
+      <Filter>include\plat\arm\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\common\plat_arm.h">
+      <Filter>include\plat\arm\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\common\arm_config.h">
+      <Filter>include\plat\arm\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\board\common\board_arm_oid.h">
+      <Filter>include\plat\arm\board\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\board\common\board_css_def.h">
+      <Filter>include\plat\arm\board\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\board\common\v2m_def.h">
+      <Filter>include\plat\arm\board\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\board\common\board_arm_def.h">
+      <Filter>include\plat\arm\board\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\board\common\drivers\norflash.h">
+      <Filter>include\plat\arm\board\common\drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\bl1\bl1.h">
+      <Filter>include\bl1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\bl1\tbbr\tbbr_img_desc.h">
+      <Filter>include\bl1\tbbr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\bl31\interrupt_mgmt.h">
+      <Filter>include\bl31</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\bl31\bl31.h">
+      <Filter>include\bl31</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\bl32\payloads\tlk.h">
+      <Filter>include\bl32\payloads</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\bl32\tsp\tsp.h">
+      <Filter>include\bl32\tsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\bl32\tsp\platform_tsp.h">
+      <Filter>include\bl32\tsp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\bl32\sp_min\platform_sp_min.h">
+      <Filter>include\bl32\sp_min</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\runtime_instr.h">
+      <Filter>include\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\semihosting.h">
+      <Filter>include\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\smcc.h">
+      <Filter>include\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\spinlock.h">
+      <Filter>include\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\utils.h">
+      <Filter>include\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\xlat_tables.h">
+      <Filter>include\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\bakery_lock.h">
+      <Filter>include\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\cassert.h">
+      <Filter>include\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\mmio.h">
+      <Filter>include\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\stddef.h">
+      <Filter>include\lib\stdlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\stdio.h">
+      <Filter>include\lib\stdlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\stdlib.h">
+      <Filter>include\lib\stdlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\string.h">
+      <Filter>include\lib\stdlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\strings.h">
+      <Filter>include\lib\stdlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\time.h">
+      <Filter>include\lib\stdlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\assert.h">
+      <Filter>include\lib\stdlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\inttypes.h">
+      <Filter>include\lib\stdlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\xlocale\_time.h">
+      <Filter>include\lib\stdlib\xlocale</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\xlocale\_strings.h">
+      <Filter>include\lib\stdlib\xlocale</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\sys\_stdint.h">
+      <Filter>include\lib\stdlib\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\sys\_timespec.h">
+      <Filter>include\lib\stdlib\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\sys\_types.h">
+      <Filter>include\lib\stdlib\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\sys\cdefs.h">
+      <Filter>include\lib\stdlib\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\sys\ctype.h">
+      <Filter>include\lib\stdlib\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\sys\errno.h">
+      <Filter>include\lib\stdlib\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\sys\limits.h">
+      <Filter>include\lib\stdlib\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\sys\stdarg.h">
+      <Filter>include\lib\stdlib\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\sys\stdint.h">
+      <Filter>include\lib\stdlib\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\sys\timespec.h">
+      <Filter>include\lib\stdlib\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\sys\types.h">
+      <Filter>include\lib\stdlib\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\sys\uuid.h">
+      <Filter>include\lib\stdlib\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\sys\_null.h">
+      <Filter>include\lib\stdlib\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\machine\_limits.h">
+      <Filter>include\lib\stdlib\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\machine\_stdint.h">
+      <Filter>include\lib\stdlib\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\machine\_types.h">
+      <Filter>include\lib\stdlib\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\machine\_inttypes.h">
+      <Filter>include\lib\stdlib\machine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\psci\psci_compat.h">
+      <Filter>include\lib\psci</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\psci\psci.h">
+      <Filter>include\lib\psci</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\pmf\pmf_helpers.h">
+      <Filter>include\lib\pmf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\pmf\pmf.h">
+      <Filter>include\lib\pmf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\libfdt\libfdt_env.h">
+      <Filter>include\lib\libfdt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\libfdt\fdt.h">
+      <Filter>include\lib\libfdt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\libfdt\libfdt.h">
+      <Filter>include\lib\libfdt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\el3_runtime\cpu_data.h">
+      <Filter>include\lib\el3_runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\el3_runtime\context_mgmt.h">
+      <Filter>include\lib\el3_runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\el3_runtime\aarch32\context.h">
+      <Filter>include\lib\el3_runtime\aarch32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\el3_runtime\aarch64\context.h">
+      <Filter>include\lib\el3_runtime\aarch64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\cpus\aarch32\cortex_a32.h">
+      <Filter>include\lib\cpus\aarch32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\cpus\aarch32\aem_generic.h">
+      <Filter>include\lib\cpus\aarch32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\cpus\aarch64\cortex_a35.h">
+      <Filter>include\lib\cpus\aarch64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\cpus\aarch64\cortex_a53.h">
+      <Filter>include\lib\cpus\aarch64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\cpus\aarch64\cortex_a57.h">
+      <Filter>include\lib\cpus\aarch64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\cpus\aarch64\cortex_a72.h">
+      <Filter>include\lib\cpus\aarch64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\cpus\aarch64\cortex_a73.h">
+      <Filter>include\lib\cpus\aarch64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\cpus\aarch64\denver.h">
+      <Filter>include\lib\cpus\aarch64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\cpus\aarch64\aem_generic.h">
+      <Filter>include\lib\cpus\aarch64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\aarch64\arch_helpers.h">
+      <Filter>include\lib\aarch64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\aarch64\smcc_helpers.h">
+      <Filter>include\lib\aarch64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\aarch64\arch.h">
+      <Filter>include\lib\aarch64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\aarch32\arch_helpers.h">
+      <Filter>include\lib\aarch32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\aarch32\smcc_helpers.h">
+      <Filter>include\lib\aarch32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\aarch32\arch.h">
+      <Filter>include\lib\aarch32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\common\bl_common.h">
+      <Filter>include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\common\debug.h">
+      <Filter>include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\common\desc_image_load.h">
+      <Filter>include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\common\firmware_image_package.h">
+      <Filter>include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\common\runtime_svc.h">
+      <Filter>include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\common\tbbr\tbbr_img_def.h">
+      <Filter>include\common\tbbr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\common\tbbr\cot_def.h">
+      <Filter>include\common\tbbr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\delay_timer.h">
+      <Filter>include\drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\emmc.h">
+      <Filter>include\drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\generic_delay_timer.h">
+      <Filter>include\drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\gpio.h">
+      <Filter>include\drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\console.h">
+      <Filter>include\drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\gic_common.h">
+      <Filter>include\drivers\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\gic_v2.h">
+      <Filter>include\drivers\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\gic_v3.h">
+      <Filter>include\drivers\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\gicv2.h">
+      <Filter>include\drivers\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\gicv3.h">
+      <Filter>include\drivers\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\nic_400.h">
+      <Filter>include\drivers\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\pl011.h">
+      <Filter>include\drivers\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\pl061_gpio.h">
+      <Filter>include\drivers\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\sp804_delay_timer.h">
+      <Filter>include\drivers\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\sp805.h">
+      <Filter>include\drivers\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\tzc_common.h">
+      <Filter>include\drivers\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\tzc_dmc500.h">
+      <Filter>include\drivers\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\tzc400.h">
+      <Filter>include\drivers\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\arm_gic.h">
+      <Filter>include\drivers\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\cci.h">
+      <Filter>include\drivers\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\cci400.h">
+      <Filter>include\drivers\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\ccn.h">
+      <Filter>include\drivers\arm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\auth\crypto_mod.h">
+      <Filter>include\drivers\auth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\auth\img_parser_mod.h">
+      <Filter>include\drivers\auth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\auth\auth_common.h">
+      <Filter>include\drivers\auth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\auth\auth_mod.h">
+      <Filter>include\drivers\auth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\auth\mbedtls\mbedtls_common.h">
+      <Filter>include\drivers\auth\mbedtls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\auth\mbedtls\mbedtls_config.h">
+      <Filter>include\drivers\auth\mbedtls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\ti\uart\uart_16550.h">
+      <Filter>include\drivers\ti\uart</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\partition\mbr.h">
+      <Filter>include\drivers\partition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\partition\partition.h">
+      <Filter>include\drivers\partition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\partition\gpt.h">
+      <Filter>include\drivers\partition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\io\io_driver.h">
+      <Filter>include\drivers\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\io\io_dummy.h">
+      <Filter>include\drivers\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\io\io_fip.h">
+      <Filter>include\drivers\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\io\io_memmap.h">
+      <Filter>include\drivers\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\io\io_semihosting.h">
+      <Filter>include\drivers\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\io\io_storage.h">
+      <Filter>include\drivers\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\io\io_block.h">
+      <Filter>include\drivers\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\cadence\cdns_uart.h">
+      <Filter>include\drivers\cadence</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\xlat_tables\xlat_tables_private.h">
+      <Filter>lib\xlat_tables</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\psci\psci_private.h">
+      <Filter>lib\psci</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\libfdt\libfdt_internal.h">
+      <Filter>lib\libfdt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\ccn\ccn_private.h">
+      <Filter>drivers\arm\ccn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\gic\v3\gicv3_private.h">
+      <Filter>drivers\arm\gic\v3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\gic\v2\gicv2_private.h">
+      <Filter>drivers\arm\gic\v2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\gic\common\gic_common_private.h">
+      <Filter>drivers\arm\gic\common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\diagrams\reset_code_no_boot_type_check.png">
+      <Filter>docs\diagrams</Filter>
+    </Image>
+    <Image Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\diagrams\reset_code_no_checks.png">
+      <Filter>docs\diagrams</Filter>
+    </Image>
+    <Image Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\diagrams\reset_code_no_cpu_check.png">
+      <Filter>docs\diagrams</Filter>
+    </Image>
+    <Image Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\diagrams\rt-svc-descs-layout.png">
+      <Filter>docs\diagrams</Filter>
+    </Image>
+    <Image Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\diagrams\sec-int-handling.png">
+      <Filter>docs\diagrams</Filter>
+    </Image>
+    <Image Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\diagrams\default_reset_code.png">
+      <Filter>docs\diagrams</Filter>
+    </Image>
+    <Image Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\diagrams\fwu_flow.png">
+      <Filter>docs\diagrams</Filter>
+    </Image>
+    <Image Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\diagrams\fwu_states.png">
+      <Filter>docs\diagrams</Filter>
+    </Image>
+    <Image Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\diagrams\non-sec-int-handling.png">
+      <Filter>docs\diagrams</Filter>
+    </Image>
+    <Image Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\diagrams\psci-suspend-sequence.png">
+      <Filter>docs\diagrams</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

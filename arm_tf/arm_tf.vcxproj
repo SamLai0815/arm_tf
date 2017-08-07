@@ -1,0 +1,678 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4E285C15-0A9C-4DE2-AC39-168BE11DC62E}</ProjectGuid>
+    <RootNamespace>arm_tf</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>F:\arm_tf\arm-trusted-firmware\include\bl1;F:\arm_tf\arm-trusted-firmware\include\bl1\tbbr;F:\arm_tf\arm-trusted-firmware\include\bl31;F:\arm_tf\arm-trusted-firmware\include\bl32;F:\arm_tf\arm-trusted-firmware\include\bl32\payloads;F:\arm_tf\arm-trusted-firmware\include\bl32\sp_min;F:\arm_tf\arm-trusted-firmware\include\bl32\tsp;F:\arm_tf\arm-trusted-firmware\include\common;F:\arm_tf\arm-trusted-firmware\include\common\aarch32;F:\arm_tf\arm-trusted-firmware\include\common\aarch64;F:\arm_tf\arm-trusted-firmware\include\common\tbbr;F:\arm_tf\arm-trusted-firmware\include\drivers;F:\arm_tf\arm-trusted-firmware\include\drivers\arm;F:\arm_tf\arm-trusted-firmware\include\drivers\auth;F:\arm_tf\arm-trusted-firmware\include\drivers\auth\mbedtls;F:\arm_tf\arm-trusted-firmware\include\drivers\cadence;F:\arm_tf\arm-trusted-firmware\include\drivers\io;F:\arm_tf\arm-trusted-firmware\include\drivers\partition;F:\arm_tf\arm-trusted-firmware\include\drivers\ti\uart;F:\arm_tf\arm-trusted-firmware\include\lib;F:\arm_tf\arm-trusted-firmware\include\lib\aarch32;F:\arm_tf\arm-trusted-firmware\include\lib\aarch64;F:\arm_tf\arm-trusted-firmware\include\lib\cpus;F:\arm_tf\arm-trusted-firmware\include\lib\cpus\aarch32;F:\arm_tf\arm-trusted-firmware\include\lib\cpus\aarch64;F:\arm_tf\arm-trusted-firmware\include\lib\el3_runtime;F:\arm_tf\arm-trusted-firmware\include\lib\el3_runtime\aarch32;F:\arm_tf\arm-trusted-firmware\include\lib\el3_runtime\aarch64;F:\arm_tf\arm-trusted-firmware\include\lib\libfdt;F:\arm_tf\arm-trusted-firmware\include\lib\pmf;F:\arm_tf\arm-trusted-firmware\include\lib\psci;F:\arm_tf\arm-trusted-firmware\include\lib\stdlib;F:\arm_tf\arm-trusted-firmware\include\lib\stdlib\machine;F:\arm_tf\arm-trusted-firmware\include\lib\stdlib\sys;F:\arm_tf\arm-trusted-firmware\include\lib\stdlib\xlocale;F:\arm_tf\arm-trusted-firmware\include\plat;F:\arm_tf\arm-trusted-firmware\include\plat\arm;F:\arm_tf\arm-trusted-firmware\include\plat\common;F:\arm_tf\arm-trusted-firmware\include\services;E:\arm_tf\arm-trusted-firmware\include\lib\aarch64;E:\arm_tf\arm-trusted-firmware\include\lib\stdlib\sys;E:\arm_tf\arm-trusted-firmware\include\lib\stdlib\machine;E:\arm_tf\arm-trusted-firmware\include\lib\stdlib\xlocale;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\.gitignore" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\acknowledgements.md" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl1\aarch32\bl1_entrypoint.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl1\aarch32\bl1_exceptions.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl1\aarch64\bl1_entrypoint.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl1\aarch64\bl1_exceptions.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl1\bl1.ld.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl1\bl1.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl2u\aarch64\bl2u_entrypoint.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl2u\bl2u.ld.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl2u\bl2u.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl2\aarch32\bl2_entrypoint.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl2\aarch64\bl2_entrypoint.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl2\bl2.ld.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl2\bl2.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl31\aarch64\bl31_entrypoint.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl31\aarch64\crash_reporting.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl31\aarch64\runtime_exceptions.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl31\bl31.ld.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl31\bl31.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl32\sp_min\aarch32\entrypoint.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl32\sp_min\sp_min.ld.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl32\sp_min\sp_min.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl32\tsp\aarch64\tsp_entrypoint.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl32\tsp\aarch64\tsp_exceptions.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl32\tsp\aarch64\tsp_request.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl32\tsp\tsp.ld.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl32\tsp\tsp.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\common\aarch32\debug.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\common\aarch64\debug.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\common\aarch64\early_exceptions.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\contributing.md" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\auth-framework.md" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\change-log.md" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\cpu-specific-build-macros.md" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\diagrams\generate_reset_images.sh" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\diagrams\reset_code_flow.dia" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\firmware-design.md" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\firmware-update.md" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\interrupt-framework-design.md" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\platform-migration-guide.md" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\plat\nvidia-tegra.md" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\plat\qemu.md" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\plat\xilinx-zynqmp.md" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\porting-guide.md" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\psci-lib-integration-guide.md" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\psci-pd-tree.md" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\reset-design.md" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\rt-svc-writers-guide.md" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\spd\optee-dispatcher.md" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\spd\tlk-dispatcher.md" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\spd\trusty-dispatcher.md" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\trusted-board-boot.md" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\user-guide.md" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\pl011\pl011_console.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\auth\mbedtls\mbedtls_common.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\auth\mbedtls\mbedtls_crypto.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\auth\mbedtls\mbedtls_x509.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\cadence\uart\aarch64\cdns_console.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\cadence\uart\cdns_console.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\console\aarch32\console.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\console\aarch32\skeleton_console.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\console\aarch64\console.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\console\aarch64\skeleton_console.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\console\console.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\console\skeleton_console.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\ti\uart\16550_console.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\ti\uart\aarch64\16550_console.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\fdts\fvp-base-gicv2-psci-aarch32.dtb" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\fdts\fvp-base-gicv2-psci-aarch32.dts" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\fdts\fvp-base-gicv2-psci.dtb" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\fdts\fvp-base-gicv2-psci.dts" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\fdts\fvp-base-gicv3-psci-aarch32.dtb" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\fdts\fvp-base-gicv3-psci-aarch32.dts" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\fdts\fvp-base-gicv3-psci.dtb" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\fdts\fvp-base-gicv3-psci.dts" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\fdts\fvp-foundation-gicv2-psci.dtb" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\fdts\fvp-foundation-gicv2-psci.dts" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\fdts\fvp-foundation-gicv3-psci.dtb" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\fdts\fvp-foundation-gicv3-psci.dts" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\fdts\fvp-foundation-motherboard.dtsi" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\fdts\rtsm_ve-motherboard.dtsi" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\common\aarch32\asm_macros.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\common\aarch32\assert_macros.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\common\aarch32\el3_common_macros.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\common\aarch64\asm_macros.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\common\aarch64\assert_macros.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\common\aarch64\el3_common_macros.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\common\asm_macros_common.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\aarch32\smcc_macros.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\cpus\aarch32\cpu_macros.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\cpus\aarch64\cpu_macros.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\pmf\pmf_asm_macros.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\common\aarch64\arm_macros.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\common\aarch64\cci_macros.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\css\common\aarch64\css_macros.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\aarch32\cache_helpers.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\aarch32\misc_helpers.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\aarch64\cache_helpers.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\aarch64\misc_helpers.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\cpus\aarch32\aem_generic.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\cpus\aarch32\cortex_a32.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\cpus\aarch32\cpu_helpers.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\cpus\aarch64\aem_generic.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\cpus\aarch64\cortex_a35.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\cpus\aarch64\cortex_a53.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\cpus\aarch64\cortex_a57.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\cpus\aarch64\cortex_a72.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\cpus\aarch64\cortex_a73.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\cpus\aarch64\cpu_helpers.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\cpus\aarch64\denver.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\cpus\cpu-ops.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\el3_runtime\aarch32\cpu_data.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\el3_runtime\aarch64\context.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\el3_runtime\aarch64\cpu_data.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\libfdt\libfdt.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\locks\exclusive\aarch32\spinlock.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\locks\exclusive\aarch64\spinlock.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\locks\exclusive\spinlock.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\psci\aarch32\psci_helpers.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\psci\aarch64\psci_helpers.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\psci\psci_lib.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\semihosting\aarch32\semihosting_call.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\semihosting\aarch64\semihosting_call.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\stdlib\stdlib.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\license.md" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\Makefile" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\make_helpers\build_env.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\make_helpers\build_macros.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\make_helpers\cygwin.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\make_helpers\defaults.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\make_helpers\msys.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\make_helpers\plat_helpers.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\make_helpers\tbbr\tbbr_tools.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\make_helpers\unix.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\make_helpers\windows.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\common\aarch32\board_arm_helpers.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\common\aarch64\board_arm_helpers.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\common\board_common.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\common\board_css.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\common\rotpk\arm_rotpk_rsa.der" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\common\rotpk\arm_rotpk_rsa_sha256.bin" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\common\rotpk\arm_rotprivk_rsa.pem" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\aarch32\fvp_helpers.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\aarch64\fvp_helpers.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\include\plat_macros.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\platform.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\sp_min\sp_min-fvp.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\tsp\tsp-fvp.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\juno\aarch64\juno_helpers.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\juno\include\plat_macros.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\juno\platform.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\juno\tsp\tsp-juno.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\aarch32\arm_helpers.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\aarch64\arm_helpers.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_common.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\sp_min\arm_sp_min.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\tsp\arm_tsp.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\common\aarch64\css_helpers.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\common\css_common.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\soc\common\soc_css.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\aarch32\platform_helpers.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\aarch32\platform_mp_stack.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\aarch32\platform_up_stack.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\aarch64\platform_helpers.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\aarch64\platform_mp_stack.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\aarch64\platform_up_stack.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\readme.md" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\opteed\opteed.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\opteed\opteed_helpers.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\tlkd\tlkd.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\tlkd\tlkd_helpers.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\trusty\trusty.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\trusty\trusty_helpers.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\tspd\tspd.mk" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\tspd\tspd_helpers.S" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\Makefile" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\fiptool\fip_create.sh" />
+    <None Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\fiptool\Makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\..\arm_tf\arm-trusted-firmware\dco.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl1\aarch32\bl1_arch_setup.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl1\aarch32\bl1_context_mgmt.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl1\aarch64\bl1_arch_setup.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl1\aarch64\bl1_context_mgmt.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl1\bl1_fwu.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl1\bl1_main.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl1\tbbr\tbbr_img_desc.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl2u\bl2u_main.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl2\aarch32\bl2_arch_setup.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl2\aarch64\bl2_arch_setup.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl2\bl2_image_load.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl2\bl2_image_load_v2.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl2\bl2_main.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl31\bl31_context_mgmt.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl31\bl31_main.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl31\interrupt_mgmt.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl32\sp_min\sp_min_main.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl32\tsp\tsp_interrupt.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl32\tsp\tsp_main.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl32\tsp\tsp_timer.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\common\bl_common.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\common\desc_image_load.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\common\runtime_svc.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\common\tf_printf.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\cci400\cci400.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\cci\cci.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\ccn\ccn.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\gic\arm_gic.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\gic\common\gic_common.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\gic\gic_v2.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\gic\gic_v3.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\gic\v2\gicv2_helpers.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\gic\v2\gicv2_main.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\gic\v3\gicv3_helpers.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\gic\v3\gicv3_main.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\pl061\pl061_gpio.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\sp804\sp804_delay_timer.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\sp805\sp805.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\tzc400\tzc400.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\tzc\tzc400.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\tzc\tzc_common_private.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\tzc\tzc_dmc500.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\auth\auth_mod.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\auth\crypto_mod.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\auth\img_parser_mod.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\auth\mbedtls\mbedtls_common.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\auth\mbedtls\mbedtls_crypto.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\auth\mbedtls\mbedtls_x509_parser.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\auth\tbbr\tbbr_cot.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\delay_timer\delay_timer.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\delay_timer\generic_delay_timer.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\emmc\emmc.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\gpio\gpio.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\io\io_block.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\io\io_dummy.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\io\io_fip.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\io\io_memmap.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\io\io_semihosting.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\io\io_storage.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\partition\gpt.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\partition\partition.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\aarch64\xlat_tables.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\el3_runtime\aarch32\context_mgmt.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\el3_runtime\aarch64\context_mgmt.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\el3_runtime\cpu_data_array.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\libfdt\fdt.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\libfdt\fdt_addresses.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\libfdt\fdt_empty_tree.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\libfdt\fdt_ro.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\libfdt\fdt_rw.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\libfdt\fdt_strerror.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\libfdt\fdt_sw.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\libfdt\fdt_wip.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\locks\bakery\bakery_lock_coherent.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\locks\bakery\bakery_lock_normal.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\pmf\pmf_main.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\pmf\pmf_smc.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\psci\psci_common.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\psci\psci_main.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\psci\psci_off.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\psci\psci_on.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\psci\psci_setup.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\psci\psci_stat.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\psci\psci_suspend.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\psci\psci_system_off.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\semihosting\semihosting.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\stdlib\abort.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\stdlib\assert.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\stdlib\exit.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\stdlib\mem.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\stdlib\printf.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\stdlib\putchar.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\stdlib\puts.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\stdlib\sscanf.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\stdlib\strchr.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\stdlib\strcmp.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\stdlib\strlen.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\stdlib\strncmp.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\stdlib\subr_prf.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\xlat_tables\aarch32\xlat_tables.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\xlat_tables\aarch64\xlat_tables.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\xlat_tables\xlat_tables_common.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\common\board_arm_trusted_boot.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\common\board_css_common.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\common\drivers\norflash\norflash.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\drivers\pwrc\fvp_pwrc.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\fvp_bl1_setup.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\fvp_bl2u_setup.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\fvp_bl2_setup.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\fvp_bl31_setup.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\fvp_common.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\fvp_err.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\fvp_io_storage.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\fvp_pm.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\fvp_security.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\fvp_topology.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\fvp_trusted_boot.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\sp_min\fvp_sp_min_setup.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\tsp\fvp_tsp_setup.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\juno\juno_bl1_setup.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\juno\juno_err.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\juno\juno_pm.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\juno\juno_security.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\juno\juno_topology.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\aarch32\arm_bl2_mem_params_desc.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\aarch64\arm_bl2_mem_params_desc.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_bl1_fwu.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_bl1_setup.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_bl2u_setup.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_bl2_setup.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_bl31_setup.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_cci.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_ccn.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_common.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_gicv2.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_gicv3.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_gicv3_legacy.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_image_load.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_io_storage.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_pm.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_sip_svc.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_topology.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_tzc400.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\arm_tzc_dmc500.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\sp_min\arm_sp_min_setup.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\common\tsp\arm_tsp_setup.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\common\css_bl1_setup.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\common\css_bl2u_setup.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\common\css_bl2_setup.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\common\css_pm.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\common\css_scp_bootloader.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\common\css_topology.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\drivers\scpi\css_mhu.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\drivers\scpi\css_scpi.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\drivers\scp\css_pm_scpi.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\soc\common\soc_css_security.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\aarch32\plat_common.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\aarch64\plat_common.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\aarch64\plat_psci_common.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\plat_bl1_common.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\plat_gic.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\plat_gicv2.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\plat_gicv3.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\plat_psci_common.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\common\tbbr\plat_tbbr.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\opteed\opteed_common.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\opteed\opteed_main.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\opteed\opteed_pm.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\tlkd\tlkd_common.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\tlkd\tlkd_main.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\tlkd\tlkd_pm.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\trusty\trusty.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\tspd\tspd_common.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\tspd\tspd_main.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\tspd\tspd_pm.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\std_svc\std_svc_setup.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\src\cert.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\src\cmd_opt.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\src\ext.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\src\key.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\src\main.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\src\sha.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\src\tbbr\tbb_cert.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\src\tbbr\tbb_ext.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\src\tbbr\tbb_key.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\fiptool\fiptool.c" />
+    <ClCompile Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\fiptool\tbbr_config.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl1\bl1_private.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl2\bl2_private.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl32\sp_min\sp_min_private.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\bl32\tsp\tsp_private.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\ccn\ccn_private.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\gic\common\gic_common_private.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\gic\v2\gicv2_private.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\drivers\arm\gic\v3\gicv3_private.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\bl1\bl1.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\bl1\tbbr\tbbr_img_desc.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\bl31\bl31.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\bl31\interrupt_mgmt.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\bl32\payloads\tlk.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\bl32\sp_min\platform_sp_min.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\bl32\tsp\platform_tsp.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\bl32\tsp\tsp.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\common\bl_common.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\common\debug.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\common\desc_image_load.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\common\firmware_image_package.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\common\runtime_svc.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\common\tbbr\cot_def.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\common\tbbr\tbbr_img_def.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\arm_gic.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\cci.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\cci400.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\ccn.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\gicv2.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\gicv3.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\gic_common.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\gic_v2.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\gic_v3.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\nic_400.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\pl011.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\pl061_gpio.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\sp804_delay_timer.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\sp805.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\tzc400.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\tzc_common.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\arm\tzc_dmc500.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\auth\auth_common.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\auth\auth_mod.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\auth\crypto_mod.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\auth\img_parser_mod.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\auth\mbedtls\mbedtls_common.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\auth\mbedtls\mbedtls_config.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\cadence\cdns_uart.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\console.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\delay_timer.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\emmc.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\generic_delay_timer.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\gpio.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\io\io_block.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\io\io_driver.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\io\io_dummy.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\io\io_fip.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\io\io_memmap.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\io\io_semihosting.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\io\io_storage.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\partition\gpt.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\partition\mbr.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\partition\partition.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\drivers\ti\uart\uart_16550.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\aarch32\arch.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\aarch32\arch_helpers.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\aarch32\smcc_helpers.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\aarch64\arch.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\aarch64\arch_helpers.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\aarch64\smcc_helpers.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\bakery_lock.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\cassert.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\cpus\aarch32\aem_generic.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\cpus\aarch32\cortex_a32.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\cpus\aarch64\aem_generic.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\cpus\aarch64\cortex_a35.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\cpus\aarch64\cortex_a53.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\cpus\aarch64\cortex_a57.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\cpus\aarch64\cortex_a72.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\cpus\aarch64\cortex_a73.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\cpus\aarch64\denver.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\el3_runtime\aarch32\context.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\el3_runtime\aarch64\context.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\el3_runtime\context_mgmt.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\el3_runtime\cpu_data.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\libfdt\fdt.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\libfdt\libfdt.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\libfdt\libfdt_env.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\mmio.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\pmf\pmf.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\pmf\pmf_helpers.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\psci\psci.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\psci\psci_compat.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\runtime_instr.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\semihosting.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\smcc.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\spinlock.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\assert.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\inttypes.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\machine\_inttypes.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\machine\_limits.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\machine\_stdint.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\machine\_types.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\stddef.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\stdio.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\stdlib.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\string.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\strings.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\sys\cdefs.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\sys\ctype.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\sys\errno.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\sys\limits.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\sys\stdarg.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\sys\stdint.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\sys\timespec.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\sys\types.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\sys\uuid.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\sys\_null.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\sys\_stdint.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\sys\_timespec.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\sys\_types.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\time.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\xlocale\_strings.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\stdlib\xlocale\_time.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\utils.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\lib\xlat_tables.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\board\common\board_arm_def.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\board\common\board_arm_oid.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\board\common\board_css_def.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\board\common\drivers\norflash.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\board\common\v2m_def.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\common\arm_config.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\common\arm_def.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\common\arm_sip_svc.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\common\plat_arm.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\css\common\css_def.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\css\common\css_pm.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\soc\common\soc_css.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\arm\soc\common\soc_css_def.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\common\common_def.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\plat\common\platform.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\include\services\std_svc.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\libfdt\libfdt_internal.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\psci\psci_private.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\lib\xlat_tables\xlat_tables_private.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\drivers\pwrc\fvp_pwrc.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\fvp_def.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\fvp_private.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\include\platform_def.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\fvp\include\platform_oid.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\juno\include\platform_def.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\juno\include\platform_oid.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\board\juno\juno_def.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\common\css_scp_bootloader.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\drivers\scpi\css_mhu.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\drivers\scpi\css_scpi.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\plat\arm\css\drivers\scp\css_scp.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\opteed\opteed_private.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\opteed\teesmc_opteed.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\opteed\teesmc_opteed_macros.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\tlkd\tlkd_private.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\trusty\smcall.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\trusty\sm_err.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\services\spd\tspd\tspd_private.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\include\cert.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\include\cmd_opt.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\include\debug.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\include\ext.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\include\key.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\include\sha.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\include\tbbr\tbb_cert.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\include\tbbr\tbb_ext.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\cert_create\include\tbbr\tbb_key.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\fiptool\fiptool.h" />
+    <ClInclude Include="..\..\..\..\arm_tf\arm-trusted-firmware\tools\fiptool\tbbr_config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\diagrams\default_reset_code.png" />
+    <Image Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\diagrams\fwu_flow.png" />
+    <Image Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\diagrams\fwu_states.png" />
+    <Image Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\diagrams\non-sec-int-handling.png" />
+    <Image Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\diagrams\psci-suspend-sequence.png" />
+    <Image Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\diagrams\reset_code_no_boot_type_check.png" />
+    <Image Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\diagrams\reset_code_no_checks.png" />
+    <Image Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\diagrams\reset_code_no_cpu_check.png" />
+    <Image Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\diagrams\rt-svc-descs-layout.png" />
+    <Image Include="..\..\..\..\arm_tf\arm-trusted-firmware\docs\diagrams\sec-int-handling.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
